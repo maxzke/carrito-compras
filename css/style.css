@@ -1,0 +1,6 @@
+.img-head{
+    background-image: url('../assets/img/hero.jpg');
+    background-size: cover;
+    height: 320px;
+    width: 90%
+}

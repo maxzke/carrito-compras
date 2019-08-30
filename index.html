@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Carrito de Compras</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+
+            <!-- carrito -->
+            <ul class="navbar-nav mr-0">
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-shopping-cart fa-2x text-white"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div id="carrito" class="bg-white">
+                                        
+                                        <table id="lista-carrito" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- <tr>
+                                                    <td class="align-middle">
+                                                        <img class="card-img-top" src="assets/img/curso1.jpg" alt="Card image cap">
+                                                    </td>
+                                                    <td>
+                                                        HTML5, CSS3, JavaScript para Principiantes
+                                                    </td>
+                                                    <td class="align-middle">
+                                                            $ 15
+                                                    </td>
+                                                    <td class="align-middle">
+                                                        <a href="#">
+                                                            <i class="fas fa-times-circle text-danger fa-2x"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <img class="card-img-top" src="assets/img/curso2.jpg" alt="Card image cap">
+                                                    </td>
+                                                    <td>
+                                                        HTML5, CSS3, JavaScript para Principiantes
+                                                    </td>
+                                                    <td class="align-middle">
+                                                       $ 15
+                                                    </td>
+                                                    <td class="align-middle">
+                                                            <a href="#">
+                                                                <i class="fas fa-times-circle text-danger fa-2x"></i>
+                                                            </a>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <img class="card-img-top" src="assets/img/curso3.jpg" alt="Card image cap">
+                                                    </td>
+                                                    <td>
+                                                        HTML5, CSS3, JavaScript para Principiantes
+                                                    </td>
+                                                    <td class="align-middle">
+                                                            $ 15
+                                                    </td>
+                                                    <td class="align-middle">
+                                                            <a href="#">
+                                                                <i class="fas fa-times-circle text-danger fa-2x"></i>
+                                                            </a>
+                                                        </td>
+                                                </tr> -->
+                                            </tbody>
+                                        </table>
+                                        <a href="#" id="vaciar-carrito" class="btn btn-block btn-danger btn-sm my-2">Vaciar Carrito</a>
+                                        <br>
+                                </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            <!-- /carrito -->
+
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron img-head">
+        <div class="container">
+            <p class="display-4 text-white">Bienvenido</p>
+                <br>
+            <p class="display-4 text-white">Aprende algo nuevo</p>
+        </div>        
+    </div>
+
+    <div class="container-fluid">
+
+        <section>
+            <div class="row text-white">
+                <div class="col-1 text-right align-self-center">
+                    <i class="fas fa-pen-fancy fa-2x"></i>
+                </div>
+                <div class="col-3 text-left">
+                    20,000 Cursos en línea <br>       
+                    Explora los temas más recientes
+                </div>
+                <div class="col-1 text-right align-self-center">
+                    <i class="fas fa-fill-drip fa-2x"></i>
+                </div>
+                <div class="col-3 text-left">
+                    Instructores Expertos <br>
+                    Aprende con distintos estilos
+                </div>
+                <div class="col-1 text-right align-self-center">
+                    <i class="fas fa-pen-fancy fa-2x"></i>
+                </div>
+                <div class="col-3 text-left">
+                    Acceso de por vida <br>
+                    Aprende a tu ritmo
+                </div>
+            </div>
+        </section>
+
+        <div class="row bg-warning mt-2">
+            <div class="col-12 text-center">
+                    <div class="display-4 text-white">Cursos En Línea</div>
+            </div>
+        </div>
+
+        <!-- Lista Cursos -->
+        <section id="lista-cursos" class="container">
+            <div class="row mt-4">
+
+                <div class="col-4">                    
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/img/curso1.jpg" alt="Card image cap">
+                        <div class="card-body text-white">
+                            <h5 class="card-title">HTML5, CSS3, JavaScript para Principiantes</h5>
+                            <p class="card-text">Juan Pedro</p>
+                            <p class="card-text"><h4> $15</h4></p>
+                            <a href="#" class="btn btn-block btn-success agregar-carrito" 
+                                data-id="1"
+                                data-imagen="assets/img/curso1.jpg" 
+                                data-precio="15" 
+                                data-titulo="HTML5, CSS3, JavaScript para Principiantes">
+                                Agregar Al Carrito
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/img/curso2.jpg" alt="Card image cap">
+                        <div class="card-body text-white">
+                            <h5 class="card-title">Curso de Comida Vegetariana</h5>
+                            <p class="card-text">Juan Pedro</p>
+                            <p class="card-text"><h4> $15</h4></p>
+                            <a href="#" class="btn btn-block btn-success agregar-carrito"
+                                data-id="2"
+                                data-imagen="assets/img/curso2.jpg" 
+                                data-precio="15" 
+                                data-titulo="Curso de Comida Vegetariana">
+                                Agregar Al Carrito
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/img/curso3.jpg" alt="Card image cap">
+                        <div class="card-body text-white">
+                            <h5 class="card-title">Guitarra para Principiantes</h5>
+                            <p class="card-text">Juan Pedro</p>
+                            <p class="card-text"><h4> $15</h4></p>
+                            <a href="#" class="btn btn-block btn-success agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">                    
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/img/curso4.jpg" alt="Card image cap">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">Huerto en tu casa</h5>
+                                <p class="card-text">Juan Pedro</p>
+                                <p class="card-text"><h4> $15</h4></p>
+                                <a href="#" class="btn btn-block btn-success agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/img/curso5.jpg" alt="Card image cap">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">Decoración con productos de tu hogar</h5>
+                                <p class="card-text">Juan Pedro</p>
+                                <p class="card-text"><h4> $15</h4></p>
+                                <a href="#" class="btn btn-block btn-success agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/img/curso3.jpg" alt="Card image cap">
+                            <div class="card-body text-white">
+                                <h5 class="card-title">Guitarra para Principiantes</h5>
+                                <p class="card-text">Juan Pedro</p>
+                                <p class="card-text"><h4> $15</h4></p>
+                                <a href="#" class="btn btn-block btn-success agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">                    
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="assets/img/curso4.jpg" alt="Card image cap">
+                                <div class="card-body text-white">
+                                    <h5 class="card-title">Huerto en tu casa</h5>
+                                    <p class="card-text">Juan Pedro</p>
+                                    <p class="card-text"><h4> $15</h4></p>
+                                    <a href="#" class="btn btn-block btn-success agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="assets/img/curso2.jpg" alt="Card image cap">
+                                <div class="card-body text-white">
+                                    <h5 class="card-title">Curso de Comida Vegetariana</h5>
+                                    <p class="card-text">Juan Pedro</p>
+                                    <p class="card-text"><h4> $15</h4></p>
+                                    <a href="#" class="btn btn-block btn-success agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="assets/img/curso3.jpg" alt="Card image cap">
+                                <div class="card-body text-white">
+                                    <h5 class="card-title">Guitarra para Principiantes</h5>
+                                    <p class="card-text">Juan Pedro</p>
+                                    <p class="card-text"><h4> $15</h4></p>
+                                    <a href="#" class="btn btn-block btn-success agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+
+            </div><!-- /row -->
+
+        </section>
+
+    </div><!-- /Container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/2df9d02185.js"></script>
+    <!-- Personalizados -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
